@@ -1,17 +1,29 @@
 /*CSS goes here*/
+@font-face {
+    font-family: 'Milky Coffee';
+    src: url('fonts/MilkyCoffee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mythias';
+    src: url('fonts/Mythias.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     /*Adding the Font*/
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Mythias", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     /*setting background color*/
-    background-color: #bb0002;
+    background-image: url(background.jpg);
 }
 
 .container {
     /*Change display type to flex and change flex direction vertically*/
     display: flex;
     flex-direction: column;
-
-    background-color: white;
     /*To make the border of container rounded*/
     border-radius: 10px;
     /*Setting the width of the container*/
@@ -21,6 +33,7 @@ body {
 }
 
 .timerButtons {
+    font-family: "Milky Coffee";
     /*Change display type to flex and center the div and it's children*/
     display: flex;
     justify-content: center;
@@ -29,12 +42,13 @@ body {
 }
 
 .tabs {
+    font-family: "Milky Coffee";
     /*Style the text by making it bold and bigger and align text to center of button*/
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     /*Change colour of button and it's text*/
-    background-color: #bb0002;
+    background-color: #bb0003;
     color: white;
     /*Style the border and remove default black border and make it transparent*/
     border-radius: 6px;
@@ -50,7 +64,7 @@ body {
     justify-content: center;
     /*To make this text pop, give it a dark grey colour and make font size way bigger*/
     font-size: 120px;
-    color: #0000008d;
+    color: #ffffff;
     /*This margin property removes the excess margin from the top and bottom*/
     margin: 0 auto;
 }
@@ -64,6 +78,7 @@ body {
 }
 
 #toggleBtn, #resetBtn {
+    font-family: "Milky Coffee";
     /*Font styling*/
     font-size: 16px;
     font-weight: bold;
@@ -74,8 +89,7 @@ body {
     /*Style the border and remove default black border and make it transparent*/
     border-radius: 4px;
     border-color: transparent;
-    /*Add a small bottom shadow in the startButton to make it look cool*/
-    box-shadow: rgb(235, 235, 235) 0px 6px 0px 0px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     /*10px margin from all sides and 15px padding from all sides to make buttons bigger*/
     margin: 10px;
     padding: 15px;
