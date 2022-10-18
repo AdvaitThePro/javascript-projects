@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <!--Added the stylesheet using external method-->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Main Container to hold all the children-->
+    <div class="container">
+        <!--Another container to hold all the tab buttons-->
+        <div class="timerButtons">
+            <!--Tab Buttons-->
+            <button class="tabs" onclick="Onclick_PomodoroBtn()">Pomodoro</button>
+            <button class="tabs" onclick="Onclick_ShortBreakBtn()">Short Break</button>
+            <button class="tabs" onclick="Onclick_LongBreakBtn()">Long Break</button>
+        </div>
+        <!--A container to hold the main timer text-->
+        <div>
+            <h1 id="timerText"></h1>
+        </div>
+        <!--Another container to hold all the control buttons-->
+        <div class="controlBtns">
+            <!--Control Buttons-->
+            <button id="toggleBtn" onclick="ToggleTimer()">Start</button>
+            <button id="resetBtn" onclick="Reset()">Reset</button>
+        </div>
+    </div>
+    <!--Added the script tag at end of body to fully render HTML-->
+    <script src="./app.js" ></script>
+</body>
+</html>
